@@ -1,0 +1,122 @@
+/* CSS for Container Component */
+
+/* Container styles */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Adjusted padding for mobile */
+    width: 90%; /* Decreased width for mobile */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.container .greeting {
+    font-size: 1.3rem;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.container .highlight {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.container .profile-pic {
+    border-radius: 50%;
+    width: 50%; /* Adjusted image width for mobile */
+    max-width: 150px; /* Limit maximum image size */
+    margin-bottom: 20px; /* Adjusted margin for mobile */
+}
+
+.container .cta-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjusted padding for mobile */
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container .cta-button:hover {
+    background-color: #1c6691;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjusted padding for tablet devices */
+        width: 80%; /* Adjusted width for tablet devices */
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container .greeting {
+        font-size: 1.1rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .container .profile-pic {
+        width: 30%; /* Adjusted image width for tablet devices */
+        margin-bottom: 20px; /* Adjusted margin for tablet devices */
+    }
+
+    .container .cta-button {
+        padding: 12px 24px; /* Adjusted padding for tablet devices */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Adjusted padding for smaller mobile devices */
+        width: 95%; /* Decreased width for smaller mobile devices */
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container .greeting {
+        font-size: 1rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .container .profile-pic {
+        width: 40%; /* Adjusted image width for smaller mobile devices */
+        margin-bottom: 15px; /* Adjusted margin for smaller mobile devices */
+    }
+
+    .container .cta-button {
+        padding: 10px 20px; /* Adjusted padding for smaller mobile devices */
+        font-size: 0.8rem;
+    }
+}

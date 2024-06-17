@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.abc {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.abc h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.abc form {
+    display: flex;
+    flex-direction: column;
+}
+
+.abc input,
+.abc textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.abc textarea {
+    height: 100px;
+    resize: none;
+}
+
+.abc button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.abc button:hover {
+    background-color: #218838;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 600px) {
+    .abc {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .abc h1 {
+        font-size: 20px;
+    }
+
+    .abc input,
+    .abc textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .abc button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 400px) {
+    .abc {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .abc h1 {
+        font-size: 18px;
+    }
+
+    .abc input,
+    .abc textarea {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .abc button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

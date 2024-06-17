@@ -1,0 +1,85 @@
+/* Basic styling for the navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.amburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.n {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Styling for the unordered list */
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+    justify-content: end;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 768px) {
+    .amburger {
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f8f8ee;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+    }
+}

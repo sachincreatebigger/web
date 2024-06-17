@@ -1,0 +1,51 @@
+/* styles.css */
+.services-container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card div {
+  margin-bottom: 10px;
+}
+
+.service-card div:last-child {
+  margin-bottom: 0;
+}
+
+.service-title {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.service-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.service-price {
+  font-size: 1.2em;
+  color: #27ae60;
+  font-weight: bold;
+}
